@@ -153,6 +153,7 @@ launch_agent()
         --net=host \
         --pid=host \
         --privileged \
+        --cgroup-parent=/system_docker \
         --oom-score-adj="-500" \
         -e CATTLE_AGENT_PIDNS=host \
         -e http_proxy \
